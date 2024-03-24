@@ -1,53 +1,77 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Projet Hub :
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Description :
+**Hub** est une application qui aura pour but de conserver tous vos sites web, signets, flux d'informations et notes préférés de manière organisée;
 
-## About Laravel
+## Méthodologie d'installation
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### git clone
+Pour récupérer le projet en local
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+```bash
+git clone git@github.com:Guillaume-RICHARD/Hub.git
+```
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Droits des dossiers de cache
+Mettre les droits en écriture sur certains dossiers
 
-## Learning Laravel
+```bash
+sudo chmod -R 775 storage/logs
+sudo chmod -R 775 bootstrap/cache
+chmod -R 775 storage/framework
+```
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Installation des dépendances PHP
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+```bash
+composer update
+```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Variable d'environnement
+Faire une copie du fichier d'environnement
+```bash
+cp .env.example .env
+```
+Puis modifier ce qu'il faut dans le nouveau fichier .env
 
-## Laravel Sponsors
+### Connexion à la BDD
+Modifier ceci :
+```env
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+En :
+```env
+DB_DATABASE=hub
+DB_USERNAME=root
+DB_PASSWORD=root
+```
 
-### Premium Partners
+### Variables locale de développement
+```env
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+```
+
+### Générer la clé de Laravel
+
+```bash
+php artisan key:generate
+```
+
+## Génération de la BDD
+On génère la BDD via les fichiers de migrations, et on injecte les données existant dans les seeders
+
+```bash
+php artisan migrate
+php artisan db:seed
+```
+## Tableau des URLS
+
+| Method | Name | URL |
+|--------|------|-----|
+| xxx    | xxx  | xxx |
 
 ## Contributing
 

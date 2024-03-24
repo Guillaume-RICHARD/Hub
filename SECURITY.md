@@ -6,13 +6,13 @@ Ce document décrit la politique de sécurité pour le package dédié aux migra
 
 Si vous découvrez une vulnérabilité de sécurité dans ce projet, veuillez nous en informer immédiatement.Toutes les vulnérabilités sont prises au sérieux.
 
-Pour signaler une vulnérabilité, veuillez envoyer un e-mail à [francois.blondel@valorisdev.fr]. Veuillez inclure autant de détails que possible, y compris une description de la vulnérabilité, les étapes pour la reproduire et toute information supplémentaire qui pourrait être utile pour comprendre et résoudre le problème.
+Pour signaler une vulnérabilité, veuillez envoyer un e-mail à [g.jf.richard@gmail.com]. Veuillez inclure autant de détails que possible, y compris une description de la vulnérabilité, les étapes pour la reproduire et toute information supplémentaire qui pourrait être utile pour comprendre et résoudre le problème.
 
 Nous nous engageons à traiter toutes les notifications de vulnérabilités de manière confidentielle et à travailler avec vous pour résoudre le problème dans les meilleurs délais.
 
 ## Processus de gestion des vulnérabilités
 
-1. Nous examerons de la notification de vulnérabilité dès que possible.
+1. Nous examinerons de la notification de vulnérabilité dès que possible.
 2. Nous travaillerons avec vous pour vérifier la vulnérabilité et comprendre son impact.
 3. Une fois la vulnérabilité confirmée, nous développerons et déploierons un correctif dès que possible.
 4. Nous tiendrons informé les développeurs de l'avancement du correctif.

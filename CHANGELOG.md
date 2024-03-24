@@ -6,10 +6,18 @@ Le format est basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/)
 
 ## [Version à venir]
 
-- Ajoutez ici les modifications prévues pour la prochaine version.
+- Connexion via Laravel Socialite
+  - En premier lieu avec Google.
+  - plus tard avec LinkedIn & GitHub.
+- Dashboard de Page d'accueil (comme start.me)
+  - Système de Blog
+  - Outil de veille par flux RSS
+  - Ajout de la météo & qualité d'air
+- 
 
-## [0.1.0] - 2024-03-15
+## [0.1.0] - 2024 03 24
 
 ### Ajouté
 
-- Première version du projet.
+- Première version du projet (initialisation)
+- Ajout des différents fichiers Markdown, pour le suivi de la documentation
